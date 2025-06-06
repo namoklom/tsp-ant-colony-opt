@@ -1,5 +1,11 @@
 # Travelling Salesman Problem (TSP) with Ant Colony Optimization (ACO)
 
+## 👤 Author
+
+| Name            | Role              | LinkedIn                                      |
+|-----------------|-------------------|-----------------------------------------------|
+| Jason Emmanuel  | Data Scientist | [linkedin.com/in/jasoneml](https://www.linkedin.com/in/jasoneml/) |
+
 This project implements a **multi-objective Ant Colony Optimization (ACO)** algorithm to solve the **Travelling Salesman Problem (TSP)**. It integrates both **geographical distance** and **route cost** as optimization objectives, providing an adaptive and heuristic approach to finding efficient routes.
 
 ## ✨ Features
@@ -33,4 +39,34 @@ This project implements a **multi-objective Ant Colony Optimization (ACO)** algo
   
 <img width="500" alt="image" src="https://github.com/user-attachments/assets/c5093d7e-6a2a-41aa-80f7-f2db873858e9" />
 
-Detailed formulas are available in the accompanying LaTeX document `mathematical_report.txt`.
+Detailed formulas are available in the accompanying LaTeX document `mathematical_report.pdf`.
+
+## 📊 Result Overview
+
+![image](https://github.com/user-attachments/assets/25d94f8e-a471-47c8-b15a-b3440158f297)
+
+The graph illustrates the convergence behavior of the Dynamic Multi-Objective Ant Colony Optimization (ACO) algorithm over 100 iterations. The y-axis represents the weighted score, which combines geographical distance and route cost, while the x-axis indicates the number of iterations. Initially, the algorithm rapidly improves the solution, significantly reducing the weighted score within the first 10 iterations. After that, the curve flattens, indicating that the algorithm has reached a plateau and converged to a near-optimal solution. The consistently low score from iteration 12 onward demonstrates stability and convergence of the ACO algorithm in optimizing the multi-objective TSP.
+
+![image](https://github.com/user-attachments/assets/b5e4e9dd-d725-4c78-87d4-e92bef0538dd)
+
+This grid of heatmaps visualizes the pheromone matrix evolution across iterations during the execution of the Ant Colony Optimization (ACO) algorithm. Each subplot shows pheromone intensity between city pairs (indexed along the x and y axes) at specific iterations (e.g., 0, 10, 20, ..., 100). Initially (Iter 0), the pheromone distribution is fairly uniform, indicating equal probability for selecting any city transitions. As iterations progress, the pheromone levels begin to concentrate along specific paths, represented by darker squares. By Iteration 50 and onward, certain routes become significantly more reinforced, showing that the algorithm has identified promising paths for the TSP solution. The persistence of these dark patches through later iterations (e.g., 90–100) suggests convergence and stability of the algorithm toward an optimized tour structure.
+
+![image](https://github.com/user-attachments/assets/73778ce9-a5c0-4bdc-994d-41d90b3ae56d)
+
+The graph shows the progression of the best route found by the Ant Colony Optimization (ACO) algorithm for the Travelling Salesman Problem (TSP) across three stages: iteration 0, 50, and 100. At iteration 0, the route is random and inefficient, indicating exploration without guidance. By iteration 50, the path becomes more geographically coherent as pheromone trails start influencing ant decisions. At iteration 100, the route is significantly optimized, showing a more logical and efficient traversal through Indonesian cities, demonstrating the convergence behavior of ACO over time.
+
+## 🧰 Tools & Libraries Used
+
+| Tool / Library              | Description                                                                                                          |
+|-----------------------------|----------------------------------------------------------------------------------------------------------------------|
+| `numpy`                     | Core library for matrix operations, random number generation, and numerical computation.                           |
+| `matplotlib.pyplot`         | Visualization library used for plotting the performance of ACO (e.g., tour length vs. iteration).                  |
+| `seaborn`                   | (Optional) Statistical data visualization, useful for heatmaps or route exploration distributions.                  |
+| `multiprocessing`           | Used to parallelize ant simulations for faster performance.                                                         |
+| `random` / `numpy.random`   | Adds stochastic elements in distance perturbations and probabilistic ant decisions.                                 |
+| `haversine` (custom func)   | Calculates great-circle distance between two latitude-longitude points using the Haversine formula.                 |
+| `LaTeX` (via MathJax)       | Used in Markdown to render mathematical equations, such as the pheromone update rule and distance formulas.         |
+| `Ant Colony Optimization`   | Main metaheuristic algorithm inspired by ant foraging behavior.                                                     |
+| `2-opt Algorithm`           | Local search technique to refine a tour by swapping edges if it leads to a shorter path.                            |
+| Dynamic α (alpha) & β (beta)| Adjusts the influence of pheromone vs. heuristic distance information as iterations progress.                       |
+| Dynamic Distance Matrix     | Introduces noise or fluctuations in distances to simulate real-world uncertainty.                                   |
