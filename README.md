@@ -6,7 +6,17 @@
 |-----------------|-------------------|-----------------------------------------------|
 | Jason Emmanuel  | Data Scientist | [linkedin.com/in/jasoneml](https://www.linkedin.com/in/jasoneml/) |
 
-This project implements a **multi-objective Ant Colony Optimization (ACO)** algorithm to solve the **Travelling Salesman Problem (TSP)**. It integrates both **geographical distance** and **route cost** as optimization objectives, providing an adaptive and heuristic approach to finding efficient routes.
+The project addresses the Travelling Salesman Problem (TSP), which involves determining the most efficient route for visiting a set of cities exactly once before returning to the starting point. The challenge lies in minimizing the total travel distance while covering all destinations. This problem is well-known for its computational complexity, especially as the number of cities increases.
+
+In this particular case, the focus is on twenty major cities in Indonesia, each represented by precise geographic coordinates (latitude and longitude). These coordinates facilitate the calculation of the physical distances between every pair of cities. However, minimizing just the physical distance is often insufficient in practical scenarios, since other factors such as travel costs, tolls, and time also impact the overall efficiency of a route.
+
+To incorporate these considerations, the project applies a multi-objective optimization approach. This means that both geographical distance and route cost are optimized simultaneously, reflecting a balance between the shortest path and the most economical travel. The conflict between these objectives introduces complexity, as a route that is shortest in terms of distance might not be the least costly, and vice versa.
+
+The chosen method to solve this problem is the Ant Colony Optimization (ACO) algorithm, a heuristic inspired by the foraging behavior of real ants. In nature, ants deposit pheromones along paths to food sources, influencing the path choices of other ants and gradually converging on the shortest routes. Similarly, in the algorithm, artificial ants probabilistically build solutions guided by virtual pheromone trails and heuristic information based on distance and cost. Over successive iterations, pheromone levels are updated to favor better routes, allowing the algorithm to adapt and explore promising solutions.
+
+Given the computational demands of simulating many ants over numerous iterations, parallel processing is utilized to enhance efficiency. By distributing tasks across multiple processor cores, the algorithm’s runtime can be significantly reduced, making it feasible to handle complex, multi-objective optimization over a sizable set of cities.
+
+---
 
 ## ✨ Features
 
@@ -16,6 +26,8 @@ This project implements a **multi-objective Ant Colony Optimization (ACO)** algo
 - 🔁 Pheromone evaporation and deposition rules
 - 🔍 Local optimization with **2-opt algorithm**
 - 📈 Adjustable weights for distance and cost
+
+---
 
 ## 🧠 Mathematical Model
 
@@ -41,6 +53,8 @@ This project implements a **multi-objective Ant Colony Optimization (ACO)** algo
 
 Detailed formulas are available in the accompanying LaTeX document `mathematical_report.pdf`.
 
+---
+
 ## 📊 Result Overview
 
 <img src="https://github.com/user-attachments/assets/25d94f8e-a471-47c8-b15a-b3440158f297" width="600"/>
@@ -54,6 +68,8 @@ This grid of heatmaps visualizes the pheromone matrix evolution across iteration
 ![image](https://github.com/user-attachments/assets/73778ce9-a5c0-4bdc-994d-41d90b3ae56d)
 
 The graph shows the progression of the best route found by the Ant Colony Optimization (ACO) algorithm for the Travelling Salesman Problem (TSP) across three stages: iteration 0, 50, and 100. At iteration 0, the route is random and inefficient, indicating exploration without guidance. By iteration 50, the path becomes more geographically coherent as pheromone trails start influencing ant decisions. At iteration 100, the route is significantly optimized, showing a more logical and efficient traversal through Indonesian cities, demonstrating the convergence behavior of ACO over time.
+
+---
 
 ## 🧰 Tools & Libraries Used
 
