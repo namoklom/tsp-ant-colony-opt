@@ -47,7 +47,7 @@ Given the computational demands of simulating many ants over numerous iterations
 
 - **2-opt Local Search**
   
-<img width="450" alt="image" src="https://github.com/user-attachments/assets/9bd7c868-b965-4db4-9fb3-5314f91865cd" />
+<img width="350" alt="image" src="https://github.com/user-attachments/assets/9bd7c868-b965-4db4-9fb3-5314f91865cd" />
 
 - **Multi-objective Score Function**
   
