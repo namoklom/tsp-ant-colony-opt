@@ -6,6 +6,8 @@
 |-----------------|-------------------|-----------------------------------------------|
 | Jason Emmanuel  | Data Scientist | [linkedin.com/in/jasoneml](https://www.linkedin.com/in/jasoneml/) |
 
+![image](https://github.com/user-attachments/assets/332c0635-d00c-47f2-9607-1e43eccc5f61)
+
 The project addresses the Travelling Salesman Problem (TSP), which involves determining the most efficient route for visiting a set of cities exactly once before returning to the starting point. The challenge lies in minimizing the total travel distance while covering all destinations. This problem is well-known for its computational complexity, especially as the number of cities increases.
 
 In this particular case, the focus is on twenty major cities in Indonesia, each represented by precise geographic coordinates (latitude and longitude). These coordinates facilitate the calculation of the physical distances between every pair of cities. However, minimizing just the physical distance is often insufficient in practical scenarios, since other factors such as travel costs, tolls, and time also impact the overall efficiency of a route.
