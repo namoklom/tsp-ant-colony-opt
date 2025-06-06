@@ -33,23 +33,23 @@ Given the computational demands of simulating many ants over numerous iterations
 
 ## 🧠 Mathematical Model
 
-- **Haversine Formula (Geographical Distance)**
+### **Haversine Formula (Geographical Distance)**
   
 <img width="500" alt="image" src="https://github.com/user-attachments/assets/52eef1af-5401-4275-83f4-9bc88985c460" />
 
-- **Ant Transition Probability**
+### **Ant Transition Probability**
   
 <img width="500" alt="image" src="https://github.com/user-attachments/assets/cee62e56-a4de-422d-bd2a-c179c4d76a7a" />
 
-- **Pheromone Update Rules**
+### **Pheromone Update Rules**
   
 <img width="400" alt="image" src="https://github.com/user-attachments/assets/275de9bc-3b5d-445e-b79f-df2a28fefcbd" />
 
-- **2-opt Local Search**
+### **2-opt Local Search**
   
 <img width="400" alt="image" src="https://github.com/user-attachments/assets/9bd7c868-b965-4db4-9fb3-5314f91865cd" />
 
-- **Multi-objective Score Function**
+### **Multi-objective Score Function**
   
 <img width="500" alt="image" src="https://github.com/user-attachments/assets/c5093d7e-6a2a-41aa-80f7-f2db873858e9" />
 
