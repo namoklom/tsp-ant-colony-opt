@@ -43,7 +43,7 @@ Detailed formulas are available in the accompanying LaTeX document `mathematical
 
 ## 📊 Result Overview
 
-<img src="https://github.com/user-attachments/assets/25d94f8e-a471-47c8-b15a-b3440158f297" width="300"/>
+<img src="https://github.com/user-attachments/assets/25d94f8e-a471-47c8-b15a-b3440158f297" width="500"/>
 
 The graph illustrates the convergence behavior of the Dynamic Multi-Objective Ant Colony Optimization (ACO) algorithm over 100 iterations. The y-axis represents the weighted score, which combines geographical distance and route cost, while the x-axis indicates the number of iterations. Initially, the algorithm rapidly improves the solution, significantly reducing the weighted score within the first 10 iterations. After that, the curve flattens, indicating that the algorithm has reached a plateau and converged to a near-optimal solution. The consistently low score from iteration 12 onward demonstrates stability and convergence of the ACO algorithm in optimizing the multi-objective TSP.
 
