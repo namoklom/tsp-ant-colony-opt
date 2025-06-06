@@ -81,7 +81,7 @@ The graph shows the progression of the best route found by the Ant Colony Optimi
 | multiprocessing           | Used to parallelize ant simulations for faster performance.                                                         |
 | random` / `numpy.random   | Adds stochastic elements in distance perturbations and probabilistic ant decisions.                                 |
 | haversine (custom func)   | Calculates great-circle distance between two latitude-longitude points using the Haversine formula.                 |
-| LaTeX (via MathJax)       | Used in Markdown to render mathematical equations, such as the pheromone update rule and distance formulas.         |
+| LaTeX    | Used in Markdown to render mathematical equations, such as the pheromone update rule and distance formulas.         |
 | Ant Colony Optimization   | Main metaheuristic algorithm inspired by ant foraging behavior.                                                     |
 | 2-opt Algorithm           | Local search technique to refine a tour by swapping edges if it leads to a shorter path.                            |
 | Dynamic α (alpha) & β (beta)| Adjusts the influence of pheromone vs. heuristic distance information as iterations progress.                       |
