@@ -27,7 +27,7 @@ This project implements a **multi-objective Ant Colony Optimization (ACO)** algo
 
 - **2-opt Local Search**
   
-<img width="500" alt="image" src="https://github.com/user-attachments/assets/9bd7c868-b965-4db4-9fb3-5314f91865cd" />
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/9bd7c868-b965-4db4-9fb3-5314f91865cd" />
 
 - **Multi-objective Score Function**
   
