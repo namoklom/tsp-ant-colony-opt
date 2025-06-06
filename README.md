@@ -23,11 +23,11 @@ This project implements a **multi-objective Ant Colony Optimization (ACO)** algo
 
 - **Pheromone Update Rules**
   
-<img width="500" alt="image" src="https://github.com/user-attachments/assets/275de9bc-3b5d-445e-b79f-df2a28fefcbd" />
+<img width="300" alt="image" src="https://github.com/user-attachments/assets/275de9bc-3b5d-445e-b79f-df2a28fefcbd" />
 
 - **2-opt Local Search**
   
-<img width="400" alt="image" src="https://github.com/user-attachments/assets/9bd7c868-b965-4db4-9fb3-5314f91865cd" />
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/9bd7c868-b965-4db4-9fb3-5314f91865cd" />
 
 - **Multi-objective Score Function**
   
