@@ -6,7 +6,7 @@
 |-----------------|-------------------|-----------------------------------------------|
 | Jason Emmanuel  | Data Scientist | [linkedin.com/in/jasoneml](https://www.linkedin.com/in/jasoneml/) |
 
-![image](https://github.com/user-attachments/assets/332c0635-d00c-47f2-9607-1e43eccc5f61)
+<img src="https://github.com/user-attachments/assets/332c0635-d00c-47f2-9607-1e43eccc5f61" width="600" />
 
 The project addresses the Travelling Salesman Problem (TSP), which involves determining the most efficient route for visiting a set of cities exactly once before returning to the starting point. The challenge lies in minimizing the total travel distance while covering all destinations. This problem is well-known for its computational complexity, especially as the number of cities increases.
 
