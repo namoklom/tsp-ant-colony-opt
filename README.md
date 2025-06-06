@@ -47,7 +47,7 @@ Given the computational demands of simulating many ants over numerous iterations
 
 - **2-opt Local Search**
   
-<img width="350" alt="image" src="https://github.com/user-attachments/assets/9bd7c868-b965-4db4-9fb3-5314f91865cd" />
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/9bd7c868-b965-4db4-9fb3-5314f91865cd" />
 
 - **Multi-objective Score Function**
   
@@ -81,7 +81,7 @@ The graph shows the progression of the best route found by the Ant Colony Optimi
 | matplotlib.pyplot         | Visualization library used for plotting the performance of ACO (e.g., tour length vs. iteration).                  |
 | seaborn                   | (Optional) Statistical data visualization, useful for heatmaps or route exploration distributions.                  |
 | multiprocessing           | Used to parallelize ant simulations for faster performance.                                                         |
-| random` / `numpy.random   | Adds stochastic elements in distance perturbations and probabilistic ant decisions.                                 |
+| random / numpy.random   | Adds stochastic elements in distance perturbations and probabilistic ant decisions.                                 |
 | haversine (custom func)   | Calculates great-circle distance between two latitude-longitude points using the Haversine formula.                 |
 | LaTeX    | Used in Markdown to render mathematical equations, such as the pheromone update rule and distance formulas.         |
 | Ant Colony Optimization   | Main metaheuristic algorithm inspired by ant foraging behavior.                                                     |
