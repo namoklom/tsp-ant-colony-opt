@@ -1,4 +1,4 @@
-# Travelling Salesman Problem (TSP) with Ant Colony Optimization (ACO)
+# Travelling Salesman Problem (TSP) with Ant Colony Optimization (ACO) Algorithm
 
 ## 👤 Author
 
